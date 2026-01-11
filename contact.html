@@ -177,7 +177,7 @@
 
   <div class="video-wrapper">
     <div class="video-card">
-      <video controls playsinline>
+      <video controls preload="metadata">
         <source src="review1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -193,16 +193,14 @@
   text-align: center;
 }
 
-/* CENTER WRAPPER */
 .video-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-/* VIDEO CARD */
 .video-card {
-  width: 300px;        /* phone portrait */
+  width: 300px;              /* phone portrait ratio */
   max-width: 90%;
   background: rgba(244,212,157,0.15);
   padding: 15px;
@@ -210,24 +208,14 @@
   box-shadow: 0 8px 20px rgba(58,46,43,0.2);
 }
 
-/* VIDEO */
 .video-card video {
-  display: block;     /* WAJIB */
+  display: block;
   width: 100%;
   aspect-ratio: 9 / 16;
   object-fit: cover;
   border-radius: 15px;
   background: #000;
-} 
-.video-reviews h2 {
-  font-family: 'Playfair Display', serif;  /* atau Poppins, etc */
-  font-size: 2rem;                        /* saiz */
-  font-weight: 700;                        /* bold */
-  margin-bottom: 30px;                     /* jarak bawah */
-  color: #3a2e2b;                          /* warna teks */
-  letter-spacing: 1px;                     /* kalau nak style luxury */
 }
-
 </style>
 
   <!-- CUSTOMER REVIEWS -->
@@ -266,3 +254,4 @@
 
 </body>
 </html>
+
